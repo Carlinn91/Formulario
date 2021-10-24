@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Cadastrar</h1>
+            
+            <div class="label-float">
+                <input type="text" id="nome" paceholder="" required>
+                <label for="nome">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" id="sobrenome" paceholder="" required>
+                <label for="sobrenome">Sobrenome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="date" id="nascimento" paceholder="" required>
+                <label for="nascimento">Data de Nascimento</label>
+            </div>
+
+
+            <div class="label-float">
+                <input type="password" id="senha" paceholder="" required>
+                <label for="usuario">Senha</label>
+                <i id="verSenha" class="fa-solid fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" id="confirmSenha" paceholder="" required>
+                <label for="confirmSenha"> Confirmar Senha</label>
+                <i id="verConfirmsenha" class="fa-solid fa-eye" aria-hidden="true"></i>
+            </div>
+            
+            <script>
+                let btn = document.querySelector('#verSenha')
+
+                btn.addEventListener('click', ()=>{
+                    let inputSenha = document.querySelector('#senha')
+
+                    if(inputSenha.getAttribute('type') == 'password'){
+                        inputSenha.setAttribute('type', 'text')
+                    }else {
+                        inputSenha.setAttribute('type', 'password')
+                    }
+                })
+            </script>
+
+            <script>
+                let btnConfirm = document.querySelector('#verConfirmsenha')
+
+                btnConfirm.addEventListener('click', ()=>{
+                    let inputConfirmSenha = document.querySelector('#confirmSenha')
+
+                    if(inputConfirmSenha.getAttribute('type') == 'password'){
+                        inputConfirmSenha.setAttribute('type', 'text')
+                    }else {
+                        inputConfirmSenha.setAttribute('type', 'password')
+                    }
+                })
+            </script>
+           
+           
+            
+            
+            <div class="justify-center">
+                <button>Cadastrar</button>
+            
+            </div>
+
+            
+
+
+        </div>
+    </div>
+</body>
+</html>

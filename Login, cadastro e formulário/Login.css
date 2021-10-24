@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Georgia;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-image: url(https://data.1freewallpapers.com/download/blue-sea-sea-blue-sky-white-clouds-ocean-scenery.jpg);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.card{
+    background-color: #ffffff70;
+    padding: 30px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 1px #00000065;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color:rgb(6, 6, 104);
+
+}
+
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid rgb(6, 6, 104);
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .5s ease-out;
+    border-radius: 0;
+}
+
+.label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.label-float input:focus{
+    border-bottom: 2px solid #03395e;
+}
+
+.label-float label{
+    color:#055e99;
+    pointer-events: none;
+    position:absolute;
+    top:0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .5s ease-out;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label{
+    font-size: 13px;
+    margin-top: 0;
+    color:#03395e;
+}
+
+button{
+    background-color: transparent;
+    border-color: #03395e;
+    color: #03395e;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12pt;
+    margin-top: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s ease-out;
+
+}
+
+button:hover{
+    background-color: #03395e;
+    color: #ffffff;
+}
+
+.justify-center{
+    display: flex;
+    justify-content: center;
+
+}
+
+hr{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 70%;
+    margin-left: 15%;
+
+}
+
+p{
+    color:rgb(6, 6, 104);
+    font-size: 12pt;
+    text-align: center;
+
+}
+
+a{
+    color: #4c7fa1;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #03395e;
+    transition: all .2s ease-out;
+}
+.fa-eye{
+    position: absolute;
+    top: 19px;
+    right: 8px;
+    cursor: pointer;
+    color: rgb(6, 6, 104);
+
+}
